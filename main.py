@@ -24,12 +24,12 @@ def get_access_token():
     try:
         access_token = get(post_url).json()['access_token']
     except KeyError:
-        print(app_id)
-        print(app_secret)
-        print("获取access_token失败，请检查app_id和app_secret是否正确")
+        #print(app_id)
+        #print(app_secret)
+        #print("获取access_token失败，请检查app_id和app_secret是否正确")
         os.system("pause")
         sys.exit(1)
-    # print(access_token)
+    print(access_token)
     return access_token
  
  
