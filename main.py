@@ -28,8 +28,8 @@ def get_access_token():
         #print(app_secret)
         #print("获取access_token失败，请检查app_id和app_secret是否正确")
         os.system("pause")
+        print(access_token)
         sys.exit(1)
-    print(access_token)
     return access_token
  
  
